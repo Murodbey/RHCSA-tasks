@@ -1,0 +1,45 @@
+RHCSA
+    1. Create a new VM on VirtualBox.
+    2. PASSWORD
+    -Change the root password to "rootadm"
+    3. SELINUX
+    Configure your systems SELinux to be running in Permissive.
+    4. HOSTNAME
+    -Change the hostname of the machine to 17.example.mymachine
+    5. USER ADMINISTRATION
+    -Create the following users, groups, and group members.
+    Group named “sysusers”.
+    User “andrew” who belongs to “sysusers” as a secondary group.
+    User “Susan” who also belongs to “sysusers” as a secondary group.
+    User “brad” who does NOT have access to an interactive shell on the system, and is not a
+    member of “sysusers” group.
+    “andrew”, “susan”, and “brad” should all have their passwords as “redhat123”.
+    6. FILE PERMISSIONS
+    -Create a collaborative directory “/ common / sysusers” with the following characteristics:
+    Group ownership of “/ common / sysusers” is “sysusers”.
+    -The directory should be readable, writable, and accessible to member of “sysusers” group
+    but not to any other user.
+    -Files created in “/ common / sysusers” automatically have group ownership set to the
+    “sysusers” group.
+    7. REPOSITORIES
+    -Create a repository called ‘myrepository’
+    Link:http://repo.mysql.com/yum/mysql-5.5-community/el/7/$basearch/
+    8. ADVANCED COMMANDS
+    Create a user ‘jean’ having user identity of 3302 and the home directory should be /
+    newhome / jean.
+    Find the files which are owned by user jean, and copy the file into /findresults directory.
+    Search the string ‘jean’ in the / etc/ passwd file and save the output in /root /
+    grepoutput.
+    9. FILE/DIRECTORY COMPRESSION
+    Create a bzip2 compression of / etc/sysconfig directory. Name the compression file as
+    etc.tar.bz2 and put this file in /root directory.
+    10. CRON JOB
+    The user ‘andrew’ must configure a cron job that runs daily at 14:24 local time and
+    executes / bin / echo “Hello”.
+    14. KERNEL UPDATE
+    Install the appropriate kernel update from: http://mirror.centos.org/centos/$releasever/os/
+    $basearch/
+    The following criteria must also be met:
+    -The updated kernel is the default kernel when the system is rebooted.
+    -The original kernel remains available & bootable on the system.
+    #RHCSA
