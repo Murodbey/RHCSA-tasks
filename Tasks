@@ -20,13 +20,13 @@ Tasks:
 
 	[6.0] .   Create the following users, groups, & group members.
 		
-    6.1 A group named sysusers.
+    	6.1 A group named sysusers.
 		6.2 A user andrew who belongs to sysusers as a secondary group
 		6.3 A user susan who also belongs to sysusers as a secondary group
 		6.4 A user brad who does not have access to an interactive shell on the system, and   who is not a member of sysusers.
 		6.5 andrew, susan, and brad should all have the password of password.
     
-   [6.2] .   .Create the following users, groups and group members.
+   	[6.2] .   .Create the following users, groups and group members.
 		
                 1. User ‘natasha’, ‘hary’ and ‘sarah’ and Group ‘sysadmin’
 		2. The user ‘natasha’ who belongs to the ‘sysadmin’ group as a secondary group.
@@ -74,41 +74,41 @@ Tasks:
         19.0 Create a volume group name as oraclevg which has physical extent size of 8MiB. Create a logical volume red_lvl of 100 extents 
         assign xfs filesystem for red_lvl. red_lvl should be available permanently on oracle directory.
 
-	20. Configure your system so that it is an NTP client of 0.pool.ntp.org
+	20.0 Configure your system so that it is an NTP client of 0.pool.ntp.org
 
 
-  21. Resize logical volume 700MB total called storage in the volume group shazam, mounted at /storage.
-Resizing done while the file system is still mounted and in-use. The volume group extended to include an
-additional physical volumne of 512MB giving a total volume group of 1GB.
+  	21.0 Resize logical volume 700MB total called storage in the volume group shazam, mounted at /storage.
+	Resizing done while the file system is still mounted and in-use. The volume group extended to include an
+	additional physical volumne of 512MB giving a total volume group of 1GB.
 
 
-	22. Resize logical volume 800MB total called storage in the volume group shazam, mounted at /storage.
+	22.0 Resize logical volume 800MB total called storage in the volume group shazam, mounted at /storage.
 
 
-  23.Create a volume group name as oraclevg which is having physical extent size of 8MiB. Create a logical
-volume red_lvl of 100 extents assign ext (ext3/4) filesystem for red_lvl. red_lvl should be available
-permanently on /mnt/data directory.
+  	23.0 Create a volume group name as oraclevg which is having physical extent size of 8MiB. Create a logical
+	volume red_lvl of 100 extents assign ext (ext3/4) filesystem for red_lvl. red_lvl should be available
+	permanently on /mnt/data directory.
 
 
-	24. Create a logical volume called homeval, the logical volume size is 550MiB with ext4 file system. Logical
-volume is mounted at the /mnt/homeval. The volume group name is vg_home, and consists of two physical
-volumes each of 300M in size.
-Resizing done while the file system is still mounted and in-use
+	24.0 Create a logical volume called homeval, the logical volume size is 550MiB with ext4 file system. Logical
+	volume is mounted at the /mnt/homeval. The volume group name is vg_home, and consists of two physical
+	volumes each of 300M in size.
+	Resizing done while the file system is still mounted and in-use
 
 
-25. Bind to the LDAP domain ‘dc=example,dc=com’ provided by classroom.example.com for user
-authentication. Note the following:
-- ldapuser7 should be able to log into your system, where 7 is your station number, but will not have a home
-directory until you have completed the autofs requirement below.
-- ldapuser7 have a password of “redhat”
-- you will get your CA certificate at http://classroom.example.com/pub/example-ca-crt.
+	25.0 Bind to the LDAP domain ‘dc=example,dc=com’ provided by classroom.example.com for user
+	authentication. Note the following:
+	- ldapuser7 should be able to log into your system, where 7 is your station number, but will not have a home
+	directory until you have completed the autofs requirement below.
+	- ldapuser7 have a password of “redhat”
+	- you will get your CA certificate at http://classroom.example.com/pub/example-ca-crt.
 
 
-26. Configure autofs to automount the home directories of LDAP users. Note the following:
-- 172.24.8.x-nfs-exports /home/ to your system where x is your station number.
-- ldapuser7 home directory is 172.25.254.254/home/rusers.
-- ldapuser7 home directory should be automated local beneath /home as /home/rusers/ldapuser7.
-- home directories must be writable by their users.
-- while you are able to log in as any of the users ldapuser1 through ldapuser20, the only home directory is
-accessible from your system is ldapuser7.
-
+	26.0 Configure autofs to automount the home directories of LDAP users. Note the following:
+	- 172.24.8.x-nfs-exports /home/ to your system where x is your station number.
+	- ldapuser7 home directory is 172.25.254.254/home/rusers.
+	- ldapuser7 home directory should be automated local beneath /home as /home/rusers/ldapuser7.
+	- home directories must be writable by their users.
+	- while you are able to log in as any of the users ldapuser1 through ldapuser20, the only home directory is
+	accessible from your system is ldapuser7.
+	
