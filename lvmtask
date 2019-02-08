@@ -1,0 +1,7 @@
+      1. Create a new 100MB physical partition mounted under /testfolder. Create the folder, if it doesn’t exist.
+      2. Create a new 250MB swap partition.
+      3. Create a new physical volume, create a new volume group named ‘datacenter’, where the
+      extent size is 16MB. Create a logical volume named ’test_lv’ with the size of 50 extents and file system ext4,
+      then mount it under /datasource.
+      4. Create a volume group called "test_vg", the volume group consists of 2 physical volumes, 300MB each.
+      Create a logical volume called "lv_1" with the size of 400MB, filesystem "ext3", and permanently mounted under /mylvm.
